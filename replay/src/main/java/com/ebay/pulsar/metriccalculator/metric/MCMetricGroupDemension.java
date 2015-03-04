@@ -28,7 +28,7 @@ public class MCMetricGroupDemension implements Externalizable {
     public MCMetricGroupDemension(String metricName, String groupId) {
         if (groupId == null || groupId.trim().isEmpty())
             throw new IllegalArgumentException(
-                    "Metric groupId cann't be null or empty.");
+                    "Metric groupId can't be null or empty.");
         this.metricName = metricName;
         this.groupId = groupId;
 
@@ -41,7 +41,7 @@ public class MCMetricGroupDemension implements Externalizable {
             Map<String, String> dimensions) {
         if (groupId == null || groupId.trim().isEmpty())
             throw new IllegalArgumentException(
-                    "Metric groupId cann't be null or empty.");
+                    "Metric groupId can't be null or empty.");
         this.metricName = metricName;
         this.groupId = groupId;
 
@@ -50,7 +50,7 @@ public class MCMetricGroupDemension implements Externalizable {
             for (Entry<String, String> entry : dimensions.entrySet()) {
                 if (entry.getValue() == null)
                     throw new IllegalArgumentException("Dimension ["
-                            + entry.getKey() + "] value cann't be null.");
+                            + entry.getKey() + "] value can't be null.");
                 this.dimensions.put(entry.getKey(), entry.getValue());
             }
         }
