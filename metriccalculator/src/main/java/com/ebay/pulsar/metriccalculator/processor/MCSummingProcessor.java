@@ -45,7 +45,7 @@ import com.ebay.pulsar.metriccalculator.statistics.basic.Counter;
 import com.ebay.pulsar.metriccalculator.util.MCConstant;
 import com.ebay.pulsar.metriccalculator.util.MCCounterHelper;
 
-@ManagedResource(objectName = "Event/Processor", description = "MC Counter  for reporting to Cassandra and EVPS")
+@ManagedResource(objectName = "Event/Processor", description = "MC Counter for reporting to Cassandra and EVPS")
 public class MCSummingProcessor extends AbstractEventProcessor implements
         XSerializable, MCMetricsProvider, BeanChangeAware {
     private static final Logger LOGGER = LoggerFactory.getLogger("com.ebay.pulsar.metriccalculator.processor.MCSummingProcessor");
